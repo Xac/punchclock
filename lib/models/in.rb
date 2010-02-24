@@ -1,0 +1,2 @@
+class In < TimeLog
+end

@@ -1,0 +1,3 @@
+time_format: '%l:%M %p'
+date_format: '%m/%d'
+enable_growl: true

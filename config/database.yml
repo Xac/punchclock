@@ -1,0 +1,3 @@
+adapter: postgresql
+username: postgres
+database: punchclock

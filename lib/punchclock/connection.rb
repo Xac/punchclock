@@ -1,0 +1,3 @@
+module ActiveRecordConnection
+  ActiveRecord::Base.establish_connection DATABASE_CONFIG
+end

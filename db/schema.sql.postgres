@@ -1,0 +1,26 @@
+CREATE TABLE time_logs
+(
+  id serial NOT NULL,
+  category_id bigint,
+  description text,
+  "type" character varying(50) DEFAULT NULL::character varying,
+  time timestamp without time zone,
+  created_at timestamp without time zone,
+  updated_at timestamp without time zone
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE time_logs OWNER TO postgres;
+
+CREATE TABLE categories
+(
+  id serial NOT NULL,
+  name character varying(255) DEFAULT NULL::character varying,
+  created_at timestamp without time zone,
+  updated_at timestamp without time zone
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE categories OWNER TO postgres;
